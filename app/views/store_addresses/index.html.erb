@@ -1,0 +1,27 @@
+<h1>Listing store_addresses</h1>
+
+<table>
+  <tr>
+    <th>Address</th>
+    <th>Phone</th>
+    <th>Store</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @store_addresses.each do |store_address| %>
+  <tr>
+    <td><%= store_address.address %></td>
+    <td><%= store_address.phone %></td>
+    <td><%= store_address.store_id %></td>
+    <td><%= link_to 'Show', store_address %></td>
+    <td><%= link_to 'Edit', edit_store_address_path(store_address) %></td>
+    <td><%= link_to 'Destroy', store_address, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Store address', new_store_address_path %>

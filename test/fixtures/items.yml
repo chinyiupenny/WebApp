@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  title: MyString
+  timestamp: 2011-08-30
+  description: MyString
+  price: 
+
+two:
+  name: MyString
+  title: MyString
+  timestamp: 2011-08-30
+  description: MyString
+  price: 

@@ -1,4 +1,18 @@
 WebApp::Application.routes.draw do
+  get "pages/home"
+
+  get "pages/contact"
+
+  get "pages/about"
+
+  resources :store_addresses
+
+  resources :items
+
+  resources :stores
+
+  resources :users
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
